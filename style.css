@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Aboreto', cursive;
+    color: white;
+}
+input:focus {
+    outline: none;
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+body {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-weight: 700;
+    text-shadow: 1px 1px 10px #000;
+  
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+@keyframes fadeIn {
+from {
+    opacity: 0;
+    }
+to {
+      opacity: 1;
+    }
+}
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+#clock {
+    font-size: 25px;
+}
+#quote {
+    text-shadow: 1px 1px 10px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+#quote span:first-child {
+    margin: 20px;
+    color: white;
+    font-size: 30px;
+}
+#quote span:last-child {
+    font-size: 20px;
+    color: rgba(216, 183, 16, 0.8);
+}
+#login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.login-form_input {
+    background-color: rgba(0,0,0,0);
+    width: 447px;
+    height: 40px;
+    font-size: 40px;
+    border: none;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+input::placeholder {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 10px #000;
+}
+.login-form_button {
+    font-weight: 700;
+    text-align: center;
+    width: 113px;
+    height: 40px;
+    font-size: 30px;
+    color:  rgba(216, 183, 16, 0.8);
+    background-color: rgba(0,0,0,0);
+    border: none;    
+    text-shadow: 1px 1px 10px #000;
+}
+.todo-form_input {
+    text-shadow: 1px 1px 10px #000;
+    background-color: rgba(0,0,0,0);
+    width: 400px;
+    height: 30px;
+    font-size: 30px;
+    border: none;
+    text-align: center;
+    margin-bottom: 45px;
+}
+#todo-list {
+    font-size: 23px;
+    text-shadow: 1px 1px 10px #000;
+}
+#todo-list button {
+    color: rgb(169, 23, 52);
+    text-shadow: 1px 1px 10px #000;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    font-size: 23px;
+}
+#weather {
+    margin-top: 20px;
+}
